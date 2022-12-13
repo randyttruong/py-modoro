@@ -8,5 +8,4 @@ def countDown(seconds: int):
     print("Timer Finished!")
     return True 
 
-countDown(20) 
 

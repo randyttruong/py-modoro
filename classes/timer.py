@@ -21,7 +21,7 @@ class Timer():
 
     # Start Timer 
     def timerInit(self):
-        countDown.cd()
+        cd.countDown(self.shortStudyTime)
         self.numberOfSessions += 1 # Log full session 
         print(f"Study Timer complete. You have now completed {self.numberOfSessions} sessions! Good job and take a break.")
 

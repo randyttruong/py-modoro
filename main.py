@@ -19,10 +19,10 @@ from classes import timer, timeConvert, countDown
     2. Finish timer.py ✅  
     3. Finish gui.py 🚫 
 '''
-inputs = (sys.argv())[1]
+inputs = sys.argv[1]
 
 if inputs == "start": 
-    timer = Timer() 
+    timer = timer.Timer() 
     timer.timerInit()
 
 
