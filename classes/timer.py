@@ -1,10 +1,10 @@
-sys.path.insert(0, "./classes/timeConvert")
-sys.path.insert(0, "./gui")
-sys.path.insert(0, "./classes/npyscreen")
-
 import tkinter, sys, datetime, time 
 from timeConvert import timeConvert 
 from countDown import countDown as cd 
+
+sys.path.insert(0, "./classes/timeConvert")
+sys.path.insert(0, "./gui")
+sys.path.insert(0, "./classes/npyscreen")
 
 class Timer():
     # Create Timer()
@@ -46,7 +46,7 @@ class Timer():
         self.shortRestTime = newMinutes
         print(f"Your short rest time value has been set to {newMinutes} minutes.")
 
-    def setLRest(self, newMinutes=0)
+    def setLRest(self, newMinutes=0):
         self.longRestTime = newMinutes
         print(f"Your long rest time value has been set to {newMinutes} minutes.")
         

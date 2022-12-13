@@ -11,7 +11,7 @@ Description: This is a Pomodoro Timer that is created in python using the tkinte
 import tkinter, datetime, time, sys
 sys.path.insert(0, "./classes")
 sys.path.insert(0, "./gui")
-from classes import timer, timeConvert, 
+from classes import timer, timeConvert, countDown
 
 '''
 🚧 TODOS: 
@@ -19,7 +19,12 @@ from classes import timer, timeConvert,
     2. Finish timer.py ✅  
     3. Finish gui.py 🚫 
 '''
-inputs = (sys.argv())[1:]
+inputs = (sys.argv())[1]
+
+if inputs == "start": 
+    timer = Timer() 
+    timer.timerInit()
+
 
 
 
