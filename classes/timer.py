@@ -24,16 +24,17 @@ class Timer():
         cd.countDown(self.shortStudyTime)
         self.numberOfSessions += 1 # Log full session 
         print(f"Study Timer complete. You have now completed {self.numberOfSessions} sessions! Good job and take a break.")
+        self.startShortRestTime()
 
     # Start Short-Rest Timer 
-    def shortRestTime(self):
-        countDown.cd(self.shortRestTime)
+    def startShortRestTime(self):
+        cd.countDown(self.shortRestTime)
         print("Short Rest complete. Get back to work!")
         return True 
 
     # Start Long-Rest Timer 
-    def longRestTime(self):
-        countDown.cd(self.longRestTime)
+    def startLongRestTime(self):
+        cd.countDown(self.longRestTime)
         print("Long Rest complete. Get back to work! ")
         return True
 

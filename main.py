@@ -19,14 +19,17 @@ from classes import timer, timeConvert, countDown
     2. Finish timer.py ✅  
     3. Finish gui.py 🚫 
 '''
-inputs = sys.argv[1]
+inputs = sys.argv
+minutes = int(inputs[2])
+print(inputs)
+userTimer = timer.Timer() 
 
-if inputs == "start": 
-    timer = timer.Timer() 
-    timer.timerInit()
-
-
-
+if len(inputs[1:]) >= 1: 
+    if len(inputs[1:]) == 1:
+        userTimer.timerInit()
+    elif len(inputs[1:]) == 2:  
+        userTimer.setStudy(minutes)
+        userTimer.timerInit()
 
 
 
